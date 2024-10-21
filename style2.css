@@ -8,9 +8,8 @@ html,body{
     font-weight: 400;
     height:100%;
     margin: 0;
+    line-height: 1.8em;
     color: #1B368B;
-    display: grid;
-    align-content: space-between;
 }
 .navbar{
     margin-bottom: 3px;
@@ -18,17 +17,12 @@ html,body{
 }
 ul{
     list-style: none;
-    display:inline-flex;
-    align-items: stretch;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-around;
+    display:flex;
+    text-align: right;
 }
 .navbar ul li{
     padding-left: 20px;
-    padding-right: 20px;
     padding-top: 50px;
-    background-color: #1B368B;
 }
 .navbar ul li a{
     color:white;
@@ -46,40 +40,31 @@ ul{
     background-image: url(IMG_20240203_114234.jpg);
     min-height: 425px;
     background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    position: relative;
 }
 
 .pimg0{
-    background-image: url(equipe.png);
+    background-image: url(IMG_3786.png);
     min-height: 200px;
 }
 
 .pimg2{
-    background-image: url(IMG-20240406-WA0045.jpg);
+    background-image: url(WhatsApp\ Image\ 2024-02-04\ at\ 15.08.46.jpeg);
     min-height: 200px;
 }
 
 .pimg4{
-    background-image: url(IMG-20240406-WA0033.jpg);
+    background-image: url(IMG_20240203_130336.png);
     min-height: 200px;
 }
 
 .pimg5{
-    background-image: url(lyceedelacotierelaboisse01.jpg);
-    min-height: 200px;
-}
-
-.pimg6{
-    background-image: url(photo2equipes.jpg);
+    background-image: url(IMG_20240203_130336.png);
     min-height: 200px;
 }
 
 
 
-.pimg0, .pimg2, .pimg4, .pimg5, .pimg6{
+.pimg0, .pimg1, .pimg2, .pimg4, .pimg5{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -147,7 +132,17 @@ ul{
 
 
 #logo{
-   padding: 10px;
+   padding-top: 20px;
+   padding-left: 20px;
+   padding-right: 40px;
+   background-color: white;
+}
+
+#nom{
+    padding-top: 20px;
+   padding-left: 0px;
+   padding-right: 30px;
+   background-color: white;
 }
 
 .countdown{
@@ -207,39 +202,6 @@ ul{
     display: block;
     padding: 30px;
 }
-
-.sectionapropos{
-    background-color: #1B368B;
-    display: block;
-    padding: 30px;
-}
-
-.sectionphotos{
-    display: flex;
-    justify-content: center;
-    padding: 50px;
-    gap: 50px;
-    flex-wrap: wrap;
-}
-
-.photos{
-    position: relative;
-    height: 300px;
-    background-position: center;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .alfa-slab {
     font-family: "Alfa Slab One", serif;

@@ -6,65 +6,131 @@
 html,body{
     font-size: 16px;
     font-weight: 400;
-    height:100%;
-    margin: 0;
-    line-height: 1.8em;
+    min-height: 100vh;
     color: #1B368B;
+    display: grid;
+    align-content: space-between;
 }
-.navbar{
-    margin-bottom: 3px;
-    background-color: #1B368B;
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    display: flex;
+    
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
 }
-ul{
-    list-style: none;
-    display:flex;
-    text-align: right;
+header::before{
+    content: "";
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(26, 46, 143, 0.1);
+    backdrop-filter: blur(5px); 
+    z-index: -1;
 }
-.navbar ul li{
-    padding-left: 20px;
-    padding-top: 50px;
-}
-.navbar ul li a{
-    color:white;
+.navbar a{
+    font-size: 1.15rem;
+    color: #fff;
     text-decoration: none;
-       
+    font-weight: 500;
+    margin-left: 2.5rem;
 }
-.navbar ul li a:hover{
-    font-weight: bold;
-    font-size: large;
-    transition: 0.3s ease-in;
-    color:#E7D63F;
+#check {
+    display: none;
+}
+.icone{
+    position:absolute;
+    right: 5%;
+    font-size : 2.8rem;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+@media(max-width:2000px){
+    .header{
+        padding: 1.3rem 5%;
+    }
+}
+@media(max-width: 1100px){
+    .icone{
+        display: inline-flex;
+    }
+    #check:checked~.icone #menu-icone{
+        display: none;
+    }
+    .icone #close-icone {
+        display: none;
+    }
+    #check:checked~.icone #close-icone{
+        display: block;
+    }
+    .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        height:0;
+        background: rgba(26, 46, 143, 0.1);
+        backdrop-filter: blur(5px);
+        box-shadow: 0.5rem 1rem rgba(27, 17, 94, 0.1) ;
+        overflow: hidden;
+        transition: .3s ease;
+    }
+    #check:checked~.navbar{
+        height: 17.7rem;
+    }
+    .navbar a {
+        display: block;
+        font-size: 1.1rem;
+        margin: 1.5rem 0;
+        text-align: center;
+    }
 }
 
 .pimg1{
-    background-image: url(IMG_20240203_114234.jpg);
+    
+    width:100%;
+    background: url(IMG_20240203_114234.jpg);
+    background-size:cover;
+    background-position: center; 
     min-height: 425px;
     background-attachment: fixed;
 }
 
 .pimg0{
-    background-image: url(IMG_3786.png);
+    background-image: url(equipe.png);
     min-height: 200px;
 }
 
 .pimg2{
-    background-image: url(WhatsApp\ Image\ 2024-02-04\ at\ 15.08.46.jpeg);
+    background-image: url(IMG-20240406-WA0045.jpg);
     min-height: 200px;
 }
 
 .pimg4{
-    background-image: url(IMG_20240203_130336.png);
+    background-image: url(IMG-20240406-WA0033.jpg);
     min-height: 200px;
 }
 
 .pimg5{
-    background-image: url(IMG_20240203_130336.png);
+    background-image: url(lyceedelacotierelaboisse01.jpg);
+    min-height: 200px;
+}
+
+.pimg6{
+    background-image: url(photo2equipes.jpg);
     min-height: 200px;
 }
 
 
 
-.pimg0, .pimg1, .pimg2, .pimg4, .pimg5{
+.pimg0, .pimg2, .pimg4, .pimg5, .pimg6{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -132,17 +198,7 @@ ul{
 
 
 #logo{
-   padding-top: 20px;
-   padding-left: 20px;
-   padding-right: 40px;
-   background-color: white;
-}
-
-#nom{
-    padding-top: 20px;
-   padding-left: 0px;
-   padding-right: 30px;
-   background-color: white;
+   padding: 10px;
 }
 
 .countdown{
@@ -202,6 +258,39 @@ ul{
     display: block;
     padding: 30px;
 }
+
+.sectionapropos{
+    background-color: #1B368B;
+    display: block;
+    padding: 30px;
+}
+
+.sectionphotos{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.photos{
+    position: relative;
+    height: 300px;
+    background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .alfa-slab {
     font-family: "Alfa Slab One", serif;
