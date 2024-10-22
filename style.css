@@ -93,6 +93,212 @@ header::before{
     }
 }
 
+.bienvenue{
+    max-width: 1200px;
+    padding: 16px;
+    margin:auto;
+    margin-top: 180px;
+    text-align: center;
+}
+.bienvenue .titre{
+    font-size: 50px;
+    color :#E7D63F
+}
+.bienvenue .bouton1{
+    margin-top: 30px;
+}
+.bouton1{
+    padding: 12px 20px;
+    background: transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    color: #1B368B;
+    background: #E7D63F;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.5px;
+}
+.bouton1 a{
+    text-decoration: none;
+    color: #1B368B;
+}
+#nous .container{
+    width: 90%;
+    max-width: 2000px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px 30px;
+    margin-top: 30px;
+}
+#nous .container .nous-contenu{
+    margin-top: 10%;
+    align-items: center;
+    padding-left: 50px;
+}
+#nous .container .nous-contenu h4{
+    font-size: 30px;
+    line-height: 26px;
+    padding-bottom: 15px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+#nous .container .nous-contenu h1{
+    font-size: 20px;
+    line-height: 26px;
+    padding-bottom: 15px;
+}
+#nous .container .nous-contenu p{
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 15px;
+}
+#nous .container .nous-image{
+    margin-left: 12%;
+    overflow: hidden;
+    display: flex;
+    display: grid;
+    grid-gap: 5px 30px;
+    font-size: 15px;
+    filter: drop-shadow(0 0 0.75rem rgb(153, 140, 191));
+}
+#nous .container .nous-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2%;
+}
+
+#palmares .container{
+    width: 90%;
+    max-width: 2000px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px 30px;
+    margin-top: 30px;
+}
+#palmares .container .palmares-contenu{
+    margin-top: 10%;
+    align-items: center;
+    padding-left: 50px;
+}
+#palmares .container .palmares-contenu h4{
+    font-size: 30px;
+    line-height: 26px;
+    padding-bottom: 15px;
+    text-align: center;
+    text-decoration: underline;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 100;
+    font-style: normal;
+
+}
+#palmares .container .palmares-contenu h1{
+    font-size: 20px;
+    line-height: 26px;
+    padding-bottom: 15px;
+}
+#palmares .container .palmares-contenu p{
+    font-size: 16px;
+    line-height: 26px;
+    padding-bottom: 15px;
+}
+#palmares .container .palmares-image{
+    margin-left: 12%;
+    overflow: hidden;
+    display: flex;
+    display: grid;
+    grid-gap: 5px 30px;
+    font-size: 15px;
+    filter: drop-shadow(0 0 0.75rem rgb(153, 140, 191));
+    text-align: right;
+}
+#palmares .container .palmares-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 2%;
+}
+
+#photos {
+    min-height: 300px;
+    background-image: url("image_compet_2.jpg");
+    background-position:center;
+    background-size: cover;
+}
+#photos .container {
+    max-width: 3000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+}
+
+
+@media (max-width: 1500px){
+    #nous .container .nous-contenu{
+        padding-left: 10%;
+        margin-top: 3%;
+    }
+    #nous .container .nous-image{
+        margin-left: 10%;
+        overflow: hidden;
+        font-size: 12px;
+    }
+    #nous .container .nous-contenu p{
+        padding-bottom: 0px;
+    }    
+    #palmares .container .palmares-contenu{
+        padding-left: 10%;
+        margin-top: 3%;
+    }
+    #palmares .container .palmares-image{
+        margin-left: 10%;
+        overflow: hidden;
+        font-size: 12px;
+    }
+}
+@media (max-width: 768px){
+    #nous .container{
+        width:90%;
+        grid-template-columns: 1fr;
+    }
+    #nous .container .nous-contenu{
+        padding-left: 10%;
+        margin-top: 0%;
+    }
+    #nous .container .nous-contenu p{
+        padding-bottom: 15px;
+    } 
+    #nous .container .nous-image{
+        font-size: 9px;
+    }
+    #palmares .container{
+        width:90%;
+        grid-template-columns: 1fr;
+    }
+    #palmares .container .palmares-contenu{
+        padding-left: 10%;
+        margin-top: 0%;
+    }
+    #palmares .container .palmares-image{
+        font-size: 9px;
+    }
+    footer .container{
+        flex-direction: column;
+        gap:16px;
+    }
+}
+.pimg0{
+    background-image: url(equipe.png);
+    min-height: 200px;
+}
 .pimg1{
     
     width:100%;
@@ -101,13 +307,11 @@ header::before{
     background-position: center; 
     min-height: 425px;
     background-attachment: fixed;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-
-.pimg0{
-    background-image: url(equipe.png);
-    min-height: 200px;
-}
-
 .pimg2{
     background-image: url(IMG-20240406-WA0045.jpg);
     min-height: 200px;
@@ -184,17 +388,6 @@ header::before{
     font-style: normal;
 }
 
-.BDP{
-    text-align: right;
-    width: 100%;
-    padding: 20px 90px;
-    text-transform: uppercase;
-    background-color: #1B368B;
-}
-
-.textBDP{
-    color: white;
-}
 
 
 #logo{
@@ -272,7 +465,11 @@ header::before{
     gap: 50px;
     flex-wrap: wrap;
 }
-
+.sectionfooter{
+    background-color: #1B368B;
+    display: block;
+    padding: 1px;
+}
 .photos{
     position: relative;
     height: 300px;
@@ -313,8 +510,26 @@ header::before{
     font-style: normal;
   }
 
-  .bai-jamjuree-bold {
+.bai-jamjuree-bold {
     font-family: "Bai Jamjuree", sans-serif;
     font-weight: 700;
     font-style: normal;
   }
+
+footer .container{
+    display:flex;
+    padding: 20px 16px;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#fff;
+}
+footer .container p{
+    font-family: "Bai Jamjuree", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    letter-spacing: 0.01px;
+    margin-bottom: -3px;
+}
+footer .container a{
+    margin-bottom: -5.5px;
+}
