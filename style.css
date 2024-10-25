@@ -510,7 +510,7 @@ button:hover{
 
 .slider .list .item .content .title,
 .slider .list .item .content .type{
-    font-size: 5em;
+    font-size: 3em;
     font-weight: bold;
     line-height: 1.3em;
 }
@@ -826,7 +826,7 @@ button:hover{
 
 .slider2 .list2 .item .content .title,
 .slider2 .list2 .item .content .type{
-    font-size: 5em;
+    font-size: 3em;
     font-weight: bold;
     line-height: 1.3em;
 }
